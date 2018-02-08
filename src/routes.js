@@ -5,7 +5,7 @@ import configureStore from './configureStore';
 import createHistory from 'history/createBrowserHistory'
 import { Route } from 'react-router'
 import { ConnectedRouter } from 'react-router-redux'
-import BasicConatiner from './containers/BasicConatiner'
+import BasicContainer from './containers/BasicContainer'
 // Create a history of your choosing (we're using a browser history in this case)
 const history = createHistory()
 
@@ -66,7 +66,7 @@ const BasicExample = () => (
         </ul>
 
         <hr/>
-        <Route exact path="/" component={BasicConatiner}/>
+        <Route exact path="/" component={BasicContainer}/>
         <Route path="/about" component={About}/>
         <Route path="/topics" component={Topics}/>
       </div>

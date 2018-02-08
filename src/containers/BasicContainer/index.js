@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as ExampleActions from '../../redux/example/exampleActions';
 
-class BasicConatiner extends Component {
+class BasicContainer extends Component {
 
   componentDidMount () {
     // usiing the props actions setted on Example actions and mapDispatchToProps
@@ -22,11 +22,11 @@ class BasicConatiner extends Component {
   }
 }
 
-BasicConatiner.contextTypes = {
+BasicContainer.contextTypes = {
   store: PropTypes.object.isRequired,
 };
 
-BasicConatiner.propTypes = {
+BasicContainer.propTypes = {
   actions: PropTypes.object.isRequired,
 };
 //  setting the container with the state as props
@@ -45,4 +45,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(BasicConatiner);
+)(BasicContainer);
